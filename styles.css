@@ -1,273 +1,299 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Saira Stencil One', sans-serif;
-    width: 100vw;
-    height: 100vw;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  overflow: hidden; 
+}
+ /* FONTS */
+ .about-tital,.project-tital , .home-container{
+  font-family: 'Saira Stencil One', sans-serif;
+
+ }
+
+ .page-two , .page-three{
+  padding-top: 5%;
+  height: 100%;
   }
+
+.wallpaper {
+  background-image: url(./Images/backGround2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+nav img {
+  min-width: 100%;
+}
+
+.wrapper {
+  margin-inline: 5%;
+}
+
+.Header-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+  margin-bottom: 5vh;
+}
   
-  .wallpaper {
-    background-image: url(./Images/backGround2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 300vh;
-  }
-  
-  nav img {
-    min-width: 100%;
-  }
-  
-  .wrap-pictureer {
-    margin-inline: 5%;
-  }
-  
-  .Header-container {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 10vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 1vw;
-    margin-bottom: 5vh;
-  }
-  
-  /* Nav buttons */
-  .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;
-    width: 35%;
-    margin: 0;
-    padding: 5px;
-    border-radius: 33px;
-    box-shadow: 2.5px 2.5px 10px rgba(1, 1, 1, 0.328), 
-               -2.5px -2.5px 10px rgba(1, 1, 1, 1),    
-               -2.5px 2.5px 10px rgba(1, 1, 1, 1),    
-               2.5px -2.5px 10px rgba(1, 1, 1, 1);
-    background-color: rgba(3, 0, 154, 0.249);
-  }
-  
-  .nav ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 3.5vw;
-  }
-  
-  .nav li {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    list-style: none;
-    width: 65px;
-    padding: 0;
-  }
-  
-  .nav li:first-child {
-    width: 40px;
-  }
-  
-  .nav li a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.699);
-    text-align: center;
-  }
-  
-  .nav a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15px;
-    height: 100%;
-    text-align: center;
-    white-space: nowrap;
-  }
-  
-  .nav img {
-    margin-left: 5px;
-    border-radius: 100%; 
-    box-shadow: 5px 5px 10px rgba(1, 1, 1, 1);
-  }
-  
-  /* Containers */
-  .home-container,
-  .about-Me-container,
-  .Projects-container {
-    display: flex;
-    width: 100%;
-    height: 80vh;
-    border-radius: 33px;
-    box-shadow: 2.5px 2.5px 10px rgba(1, 1, 1, 0.328), 
-    -2.5px -2.5px 10px rgba(1, 1, 1, 1),    
-    -2.5px 2.5px 10px rgba(1, 1, 1, 1),    
-    2.5px -2.5px 10px rgba(1, 1, 1, 1);
-    background-color: rgba(3, 0, 154, 0.374);
-    margin-bottom: 10vh;
-  }
-  
-  .Projects-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80vh;
-    border: 1px solid blue;
-    margin-bottom: 10vh;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Page 1 */
-  .home-content {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    margin-left: 5%;
-    padding: 20px;
-    flex-direction: column;
-    width: 50%;
-  }
-  
-  .p-picture-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 20px;
-    width: 50%;
-  }
-  
-  .home-content *,
-  .p-picture img {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Text */
-  .name h2,
-  .developer h2 {
-    font-size: 3vw;
-  }
-  
-  .welcoming h3 {
-    font-size: 2vw;
-  }
-  
-  /* Placement */
-  .name,
-  .developer,
-  .welcoming {
-    margin-bottom: 5%;
-    color: rgb(255, 255, 255);
-  }
-  
-  /* Picture */
-  .p-picture img {
-    max-width: 25vw;
-    border-radius: 100%;
-    box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.328), 
-               -5px -5px 10px rgba(1, 1, 1, 1),    
-               -5px 5px 10px rgba(1, 1, 1, 1),    
-               5px -5px 10px rgba(1, 1, 1, 1);
-  }
-  
-  /* Page 2 */
-  .about-Me-container {
-    align-items: start;
-  }
-  
-  .about-Me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
-    color: rgb(0, 0, 0);
-  }
-  
-  .about-Me-text {
-    display: flex;
-    align-items: center;
-  }
-  
-  .about-Me h2 {
-    margin-top: 2.5%;
-    margin-bottom: 5%;
-  }
-  
-  .about-Me p {
-    font-size: 1.5vw;
-  }
-  
-  /* Projects Page */
-  .Projects-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .project-tital {
-    height: 20%;
-    margin: 0;
-    margin-top: 2.5%;
-    margin-bottom: 5%;
-  }
-  
-  .Projects-content ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
-  }
-  
-  .Projects-content li {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    list-style: none;
-    padding: 0;
-    text-decoration: none;
-  }
-  
-  .Projects-content img {
-    width: 20vw;
-    padding: 0px;
-  }
-  
-  .Projects-content a {
-    height: 0;
-  }
-  /* --------------------------------------------------------------------Media-Sreen------------------------------------------------------------------------- */
-  
-  @media screen and (max-width: 1200px) {
-     
-      .nav {
-        width: 100%;
-      
-      }
-      .nav li a{
-          font-size: 1.5vh;
-      }
+/* Containers display */
+.home-container, .about-Me-container,.Projects-container {
+  border-radius: 33px;
+  outline: 2px solid rgba(0, 0, 0, 0.381);;
+  box-shadow: 2.5px 2.5px 10px rgba(1, 1, 1, 0.328), 
+  -2.5px -2.5px 10px rgba(1, 1, 1, 1),    
+  -2.5px 2.5px 10px rgba(1, 1, 1, 1),    
+  2.5px -2.5px 10px rgba(1, 1, 1, 1);
+  background-color: rgba(3, 0, 154, 0.374);
+}
+
+.home-container {
+  display: flex;
+}
+/* Nav buttons */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 35%;
+  margin: 0;
+  padding: 5px;
+  border-radius: 33px;
+  box-shadow: 2.5px 2.5px 10px rgba(1, 1, 1, 0.328), 
+             -2.5px -2.5px 10px rgba(1, 1, 1, 1),    
+             -2.5px 2.5px 10px rgba(1, 1, 1, 1),    
+             2.5px -2.5px 10px rgba(1, 1, 1, 1);
+  background-color: rgba(3, 0, 154, 0.249);
+}
+
+.nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 3.5vw;
+}
+
+.nav li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  list-style: none;
+  width: 65px;
+  padding: 0;
+}
+
+.nav li:first-child {
+  width: 40px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.699);
+  text-align: center;
+}
+
+.nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nav img {
+  margin-left: 5px;
+  border-radius: 100%; 
+  box-shadow: 5px 5px 10px rgba(1, 1, 1, 1);
+}
+
+
+
+/* Page 1 */
+.home-content {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-left: 5%;
+  padding: 20px;
+  flex-direction: column;
+  width: 50%;
+}
+
+.p-picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  width: 50%;
+}
+
+.home-content *,
+.p-picture img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Text */
+.name h2,
+.developer h2 {
+  font-size: 3vw;
+}
+
+.welcoming h3 {
+  font-size: 2vw;
+}
+
+/* Placement */
+.name,
+.developer,
+.welcoming {
+  margin-bottom: 5%;
+  color: rgb(255, 255, 255);
+}
+
+/* Picture */
+.p-picture img {
+  max-width: 25vw;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.328), 
+             -5px -5px 10px rgba(1, 1, 1, 1),    
+             -5px 5px 10px rgba(1, 1, 1, 1),    
+             5px -5px 10px rgba(1, 1, 1, 1);
+}
+
+/* Page 2 */
+
+.about-Me-container {
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 80vh;
+  padding: 5px;
+  margin: 0;
+}
+
+.about-tital {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  margin: 0;
+}
+
+.about-Me-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-tital h2, .project-tital h2 {
+  font-size: 5vh;
+}
+
+.left-about-Me , .right-about-Me{
+  font-size: 4vh;
+
+}
+
+/* Page 3 */
+
+.Projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 10vh;
+  padding: 0;
+  margin: 0;
+}
+
+.project-tital {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  margin: 0;
+}
+
+.Projects-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Projects-content ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.Projects-content li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  list-style: none;
+  height: 25vh;
+  padding: 0;
+  width: 20vw;
+}
+
+.Projects-content li:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
+margin-top: 12px;
+}
+
+.Projects-content img {
+  width: 20vw;
+
+  padding: 0px;
+}
+
+.Projects-content a {
+  height: 0;
+}
+/* --------------------------------------------------------------------Media-Sreen------------------------------------------------------------------------- */
+
+/* @media screen and (max-width: 1200px) {
+   
+    .nav {
+      width: 100%;
     
-      .nav ul {
-        gap: 2vw;
-      }  
-      .home-container,
-      .about-Me-container {
-        flex-direction: row;
-        height: auto;
-      }
+    }
+    .nav li a{
+        font-size: 1.5vh;
+    }
+  
+    .nav ul {
+      gap: 2vw;
     }  
+    .home-container,
+    .about-Me-container {
+      flex-direction: row;
+      height: auto;
+    }
+  }   */
