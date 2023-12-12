@@ -98,6 +98,7 @@ nav img {
 }
 
 .nav li a {
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.699);
   text-align: center;
@@ -202,6 +203,10 @@ nav img {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.about-Me-text *{
+  font-family: 'Montserrat', sans-serif;
 }
 
 .about-tital h2, .project-tital h2 {
