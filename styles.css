@@ -11,7 +11,7 @@ html {
 }
 
 /* FONTS */
-.about-tital, .project-tital, .home-container {
+.about-tital, .project-tital, .home-container, .contact-tital {
   font-family: 'Saira Stencil One', sans-serif;
 }
 
@@ -19,7 +19,7 @@ section {
   min-height: 100vh;
 }
 
-.page-two, .page-three {
+.page-two,.page-three,.page-four{
   padding-top: 5%;
   height: 100%;
 }
@@ -54,7 +54,7 @@ nav img {
 }
 
 /* Containers display */
-.home-container, .about-Me-container, .Projects-container {
+.home-container, .about-Me-container, .Projects-container, .Contact-Me-container {
   border-radius: 33px;
   outline: 2px solid rgba(0, 0, 0, 0.381);
   box-shadow: 2.5px 2.5px 10px rgba(1, 1, 1, 0.328),
@@ -194,51 +194,6 @@ nav img {
 
 /* Page 2 */
 
-.about-Me-container {
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
- 
-
- height: 80vh;
-  padding: 5px;
-  margin: 0;
-}
-
-.about-tital {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  height: 20%;
-  margin: 0;
-}
-
-.about-Me-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.about-Me-text * {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.about-tital h2,
-.project-tital h2 {
-  font-size: 5vh;
-}
-
-.left-about-Me,
-.right-about-Me {
-  font-size: 3.5vh;
-}
-
-/* Page 3 */
-
 .Projects-container {
   display: flex;
   flex-direction: column;
@@ -358,9 +313,102 @@ nav img {
   transition: opacity 0.3s ease;
 }
 
-.RPS-link h5 {
+.RPS-link h5 , .RCK-link h5 , .SYM-link h5 {
   font-size: 1.7vw;
 }
+
+.EMPTY-landing-img h5{
+  font-family: 'Saira Stencil One', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 2vw;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Page 3 */
+
+.about-Me-container {
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+ 
+
+ height: 80vh;
+  padding: 5px;
+  margin: 0;
+}
+
+.about-tital {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  margin: 0;
+}
+
+.about-Me-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-Me-text * {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-tital h2,
+.project-tital h2 {
+  font-size: 5vh;
+}
+
+.left-about-Me,.right-about-Me {
+  font-size: 3.5vh;
+}
+
+/* Page 4 */
+
+.Contact-Me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0;
+  margin: 0;
+}
+
+.Contact-tital {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  margin: 0;
+}
+
+.Contact-Me-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 1fr;
+}
+
 /* --------------------------------------------------------------------Media-Sreen------------------------------------------------------------------------- */
 
 /* @media screen and (max-width: 1200px) {
