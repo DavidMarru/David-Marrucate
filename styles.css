@@ -4,13 +4,21 @@ body {
   width: 100vw;
   height: 100vh;
   color: rgb(255, 255, 255);
-  overflow: hidden; 
+  /* overflow: hidden; */
+}
+
+html{
+  width: 100vw;
 }
  /* FONTS */
  .about-tital,.project-tital , .home-container{
   font-family: 'Saira Stencil One', sans-serif;
 
  }
+
+section {
+  min-height: 100vh;
+}
 
  .page-two , .page-three{
   padding-top: 5%;
@@ -22,8 +30,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
-  height: 100%;
+  min-height: 100vw;
+  min-height: 100vh;
 }
 
 nav img {
@@ -43,7 +51,7 @@ nav img {
   margin: 0;
   padding: 0;
   font-size: 1vw;
-  margin-bottom: 5vh;
+  margin-bottom: 2.5vh;
 }
   
 /* Containers display */
@@ -66,7 +74,7 @@ nav img {
   justify-content: center;
   align-items: center;
   height: 5vh;
-  width: 35%;
+  width: fit-content;
   margin: 0;
   padding: 5px;
   border-radius: 33px;
@@ -74,11 +82,12 @@ nav img {
              -2.5px -2.5px 10px rgba(1, 1, 1, 1),    
              -2.5px 2.5px 10px rgba(1, 1, 1, 1),    
              2.5px -2.5px 10px rgba(1, 1, 1, 1);
-  background-color: rgba(3, 0, 154, 0.249);
+  background-color: rgba(3, 0, 154, 0.374);
 }
 
 .nav ul {
   display: flex;
+  justify-content: space-around;
   padding: 0;
   margin: 0;
   gap: 3.5vw;
@@ -93,22 +102,25 @@ nav img {
   padding: 0;
 }
 
-.nav li:first-child {
-  width: 40px;
-}
-
 .nav li a {
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.699);
+  color: rgba(255, 255, 255, 0.968);
   text-align: center;
+}
+.home-nav a {
+margin-left: 2vw;
+}
+
+.ContactMe-nav a{
+  margin-right: 4vw;
 }
 
 .nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15px;
+  max-width: 1vw;
   height: 100%;
   text-align: center;
   white-space: nowrap;
@@ -120,7 +132,9 @@ nav img {
   box-shadow: 5px 5px 10px rgba(1, 1, 1, 1);
 }
 
-
+#ds{
+  margin-right: 2.5vw;
+}
 
 /* Page 1 */
 .home-content {
@@ -131,6 +145,7 @@ nav img {
   padding: 20px;
   flex-direction: column;
   width: 50%;
+  height: 70vh;
 }
 
 .p-picture-container {
@@ -148,7 +163,7 @@ nav img {
   padding: 0;
 }
 
-/* Text */
+/* Home Text */
 .name h2,
 .developer h2 {
   font-size: 3vw;
@@ -203,6 +218,7 @@ nav img {
   align-items: center;
   justify-content: center;
   text-align: center;
+
 }
 
 .about-Me-text *{
@@ -214,7 +230,7 @@ nav img {
 }
 
 .left-about-Me , .right-about-Me{
-  font-size: 4vh;
+  font-size: 3.5vh;
 
 }
 
@@ -227,14 +243,14 @@ nav img {
   align-items: center;
   width: 100%;
   height: 80vh;
-  margin-bottom: 10vh;
   padding: 0;
   margin: 0;
 }
 
 .project-tital {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   text-align: center;
   width: 100%;
@@ -247,7 +263,7 @@ nav img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  min-height: 1fr;
 }
 
 .Projects-content ul {
@@ -255,6 +271,7 @@ nav img {
   grid-template-columns: repeat(3, 1fr);
   padding: 0;
   margin: 0;
+  margin-bottom: 5vh;
   gap: 20px;
 }
 
@@ -273,9 +290,15 @@ margin-top: 12px;
 }
 
 .Projects-content img {
-  width: 20vw;
-
+  width: 18vw;
+  height: auto;
   padding: 0px;
+  box-shadow: 2.5px 2.5px 10px rgba(1, 1, 1, 0.328), 
+             -2.5px -2.5px 10px rgba(1, 1, 1, 1),    
+             -2.5px 2.5px 10px rgba(1, 1, 1, 1),    
+             2.5px -2.5px 10px rgba(1, 1, 1, 1);
+border-radius: 5px;
+
 }
 
 .Projects-content a {

@@ -1,28 +1,40 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let currentSectionIndex = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav a");
     const sections = document.querySelectorAll("section");
-
-    function showSection(index) {
-        sections.forEach((section, i) => {
-            if (i === index) {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
+  
+    function scrollToTarget(targetId) {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "start",
         });
+      }
     }
-
-    function handleKeyPress(event) {
-        if (event.key === "ArrowUp") {
-            currentSectionIndex = Math.max(0, currentSectionIndex - 1);
-        } else if (event.key === "ArrowDown") {
-            currentSectionIndex = Math.min(sections.length - 1, currentSectionIndex + 1);
+  
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        scrollToTarget(targetId);
+      });
+    });
+  
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+        e.preventDefault(); 
+  
+        const currentSectionIndex = Array.from(sections).findIndex(
+          (section) => section.getBoundingClientRect().top >= 0
+        );
+  
+        if (e.key === "ArrowUp" && currentSectionIndex > 0) {
+          scrollToTarget(sections[currentSectionIndex - 1].id);
+        } else if (e.key === "ArrowDown" && currentSectionIndex < sections.length - 1) {
+          scrollToTarget(sections[currentSectionIndex + 1].id);
         }
-
-        showSection(currentSectionIndex);
-    }
-
-    document.addEventListener("keydown", handleKeyPress);
-
-    showSection(currentSectionIndex);
-});
+      }
+    });
+  });
+  
