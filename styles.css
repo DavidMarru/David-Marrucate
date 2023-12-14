@@ -35,7 +35,6 @@ html {
 .back-to-home a {
   color: white;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
   font-size: 24px; 
 }
 
@@ -193,21 +192,38 @@ nav img {
 }
 
 /* Home Text */
-.name h2,
-.developer h2 {
-  font-size: 3vw;
+
+.name{
+  margin-bottom: 10px;
+
 }
 
+#myName{
+  color: rgb(28, 17, 84);
+  text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+}
 .welcoming h3 {
   font-size: 2vw;
 }
 
 /* Placement */
-.name,
-.developer,
-.welcoming {
-  margin-bottom: 5%;
+.intro {
   color: rgb(255, 255, 255);
+  font-size: 2vw;
+
+}
+#WWW {
+  color: rgb(28, 17, 84);
+  text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+     margin-top: 5px;
 }
 
 /* Picture */
@@ -299,7 +315,6 @@ nav img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.5vw;
   color: rgba(255, 255, 255, 0.5);
   opacity: 0;
@@ -388,12 +403,13 @@ nav img {
   text-align: center;
 }
 
-.about-Me-text * {
+.about-Me-text  {
   font-family: 'Montserrat', sans-serif;
 }
 
 .about-tital h2,
-.project-tital h2 {
+.project-tital h2,
+.Contact-tital h2{
   font-size: 5vh;
 }
 
