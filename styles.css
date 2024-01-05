@@ -52,9 +52,13 @@ section {
   min-height: 100vh;
 }
 
-.page-two,.page-three,.page-four{
+.page{
   padding-top: 5%;
   height: 100%;
+}
+
+.page-three{
+  
 }
 
 .wallpaper {
@@ -239,7 +243,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80vh;
+  height: fit-content;
   padding: 5px;
   margin: 0;
 }
